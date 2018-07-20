@@ -31,8 +31,10 @@ endif()
 ########################################################################
 GR_PYTHON_INSTALL(
     FILES
-    __init__.py
-    pwsat_demod_c.py DESTINATION ${GR_PYTHON_DIR}/pwsat2
+        __init__.py
+        pwsat_demod_c.py
+        pwsat_save_frame.py 
+    DESTINATION ${GR_PYTHON_DIR}/pwsat2
 )
 
 ########################################################################

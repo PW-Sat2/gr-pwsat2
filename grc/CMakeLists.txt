@@ -18,6 +18,9 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 
-install(FILES
-    pwsat2_pwsat_demod_c.xml DESTINATION share/gnuradio/grc/blocks
+install(
+    FILES
+        pwsat2_pwsat_demod_c.xml
+        pwsat2_save_frame.xml 
+    DESTINATION share/gnuradio/grc/blocks
 )

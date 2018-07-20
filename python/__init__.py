@@ -32,4 +32,5 @@ except ImportError:
 
 # import any pure python here
 from pwsat_demod_c import pwsat_demod_c
+from pwsat_save_frame import pwsat_save_frame
 #

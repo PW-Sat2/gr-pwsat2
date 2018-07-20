@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<block>
+  <name>PW-Sat2 Save Frame</name>
+  <key>pwsat2_save_frame</key>
+  <category>[PW-Sat2]</category>
+  <import>import pwsat2</import>
+  <make>pwsat2.pwsat_save_frame($file, $direction)</make>
+
+  <param>
+    <name>File</name>
+    <key>file</key>
+    <value></value>
+    <type>file_save</type>
+  </param>
+
+  <param>
+    <name>Direction</name>
+    <key>direction</key>
+    <value>Uplink</value>
+    <type>string</type>
+    <option>
+      <name>Uplink</name>
+      <key>Uplink</key>
+    </option>
+    <option>
+      <name>Downlink</name>
+      <key>Downlink</key>
+    </option>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+</block>
