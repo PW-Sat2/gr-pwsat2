@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<block>
+  <name>PW-Sat2 PTT</name>
+  <key>pwsat2_ptt</key>
+  <category>[PW-Sat2]</category>
+  <import>import pwsat2</import>
+  <make>pwsat2.pwsat2_ptt($device, $baudrate, $samp_rate, $delay)</make>
+
+  <param>
+    <name>Device</name>
+    <key>device</key>
+    <value></value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Baudrate</name>
+    <key>baudrate</key>
+    <value>9600</value>
+    <type>int</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Sample rate</name>
+    <key>samp_rate</key>
+    <value>samp_rate</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Delay</name>
+    <key>delay</key>
+    <value>0.2</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+</block>
