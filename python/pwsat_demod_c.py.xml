@@ -1,0 +1,28 @@
+<block>
+  <name>QT GUI PW-Sat2 Demodulator</name>
+  <key>pwsat_demod_c</key>
+  <category>[PW-Sat2]</category>
+  <flags>need_qt_gui</flags>
+  <import>from pwsat_demod_c import pwsat_demod_c  # grc-generated hier_block</import>
+  <make>pwsat_demod_c()
+#set $win = 'self.%s' % $id
+${gui_hint() % $win}</make>
+  <param>
+    <name>GUI Hint</name>
+    <key>gui_hint</key>
+    <value></value>
+    <type>gui_hint</type>
+    <hide>part</hide>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>frames</name>
+    <type>message</type>
+  </source>
+  <doc>/home/novakov/pwsat-stuff/gr-pwsat2/python/pwsat_demod_c.py</doc>
+  <grc_source>/home/novakov/pwsat-stuff/gr-pwsat2/python/pwsat_demod_c.grc</grc_source>
+</block>
