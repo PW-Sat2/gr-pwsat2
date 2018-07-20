@@ -22,7 +22,7 @@ class pwsat2_frame_source(gr.basic_block):
 
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.SUB)
-        print "Address: |%s|" % address
+
         if isBound:
             self.socket.bind(address)
         else:
@@ -37,8 +37,6 @@ class pwsat2_frame_source(gr.basic_block):
             if self.socket.poll(timeout=1) > 0:
                 buff = self.socket.recv()
                 buff = [ord(i) for i in buff]
-
-                print buff
 
                 pkt = pmt.cons(pmt.PMT_NIL, pmt.init_u8vector(len(buff), buff))
 

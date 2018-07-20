@@ -23,7 +23,6 @@ class pwsat2_frame_sink(gr.basic_block):
 
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.PUB)
-        print "Address: |%s|" % address
 
         if isBound:
             self.socket.bind(address)
@@ -31,7 +30,6 @@ class pwsat2_frame_sink(gr.basic_block):
             self.socket.connect(address)
 
     def handle_msg(self, msg_pmt):
-        print "HANDLE", msg_pmt
         msg = pmt.cdr(msg_pmt)
         if not pmt.is_u8vector(msg):
             print "[ERROR] Received invalid message type. Expected u8vector"
