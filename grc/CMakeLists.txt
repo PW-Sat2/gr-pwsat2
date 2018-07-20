@@ -22,5 +22,7 @@ install(
     FILES
         pwsat2_pwsat_demod_c.xml
         pwsat2_save_frame.xml 
+        pwsat2_frame_sink.xml 
+        pwsat2_frame_source.xml 
     DESTINATION share/gnuradio/grc/blocks
 )
