@@ -4,21 +4,13 @@
   <key>pwsat2_ptt</key>
   <category>[PW-Sat2]</category>
   <import>import pwsat2</import>
-  <make>pwsat2.pwsat2_ptt($device, $baudrate, $samp_rate, $delay)</make>
+  <make>pwsat2.pwsat2_ptt($device, $samp_rate, $delay)</make>
 
   <param>
     <name>Device</name>
     <key>device</key>
     <value></value>
     <type>string</type>
-  </param>
-
-  <param>
-    <name>Baudrate</name>
-    <key>baudrate</key>
-    <value>9600</value>
-    <type>int</type>
-    <hide>part</hide>
   </param>
 
   <param>
@@ -36,8 +28,14 @@
     <hide>part</hide>
   </param>
 
+
   <sink>
     <name>in</name>
     <type>float</type>
   </sink>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
 </block>
