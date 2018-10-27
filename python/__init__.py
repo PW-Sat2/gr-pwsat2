@@ -35,4 +35,5 @@ from pwsat_demod_c import pwsat_demod_c
 from pwsat_save_frame import pwsat_save_frame
 from pwsat2_frame_sink import pwsat2_frame_sink
 from pwsat2_frame_source import pwsat2_frame_source
+from pwsat2_ptt import pwsat2_ptt
 #

@@ -24,5 +24,6 @@ install(
         pwsat2_save_frame.xml 
         pwsat2_frame_sink.xml 
         pwsat2_frame_source.xml 
+        pwsat2_ptt.xml
     DESTINATION share/gnuradio/grc/blocks
 )

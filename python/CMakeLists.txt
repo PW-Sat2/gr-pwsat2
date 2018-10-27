@@ -35,7 +35,8 @@ GR_PYTHON_INSTALL(
         pwsat_demod_c.py
         pwsat_save_frame.py 
         pwsat2_frame_sink.py 
-        pwsat2_frame_source.py 
+        pwsat2_frame_source.py
+        pwsat2_ptt.py
     DESTINATION ${GR_PYTHON_DIR}/pwsat2
 )
 
