@@ -36,4 +36,5 @@ from pwsat_save_frame import pwsat_save_frame
 from pwsat2_frame_sink import pwsat2_frame_sink
 from pwsat2_frame_source import pwsat2_frame_source
 from pwsat2_ptt import pwsat2_ptt
+from pwsat2_doppler import pwsat2_doppler
 #

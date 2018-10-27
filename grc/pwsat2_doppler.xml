@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+   based on https://github.com/wnagele/gr-gpredict-doppler
+-->
+<block>
+  <name>PW-Sat2 Doppler</name>
+  <key>pwsat2_doppler</key>
+  <category>[PW-Sat2]</category>
+  <import>import pwsat2</import>
+  <make>pwsat2.pwsat2_doppler(self.set_$target(), "$gpredict_host()", $gpredict_port(), $verbose())</make>
+
+  <param>
+    <name>Variable</name>
+    <key>target</key>
+    <value>freq</value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Gpredict Host</name>
+    <key>gpredict_host</key>
+    <value>localhost</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Gpredict Port</name>
+    <key>gpredict_port</key>
+    <value>4532</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Verbose</name>
+    <key>verbose</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>
+      <name>Yes</name>
+      <key>True</key>
+    </option>
+    <option>
+      <name>No</name>
+      <key>False</key>
+    </option>
+  </param>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

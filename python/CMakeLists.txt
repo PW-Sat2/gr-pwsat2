@@ -37,6 +37,7 @@ GR_PYTHON_INSTALL(
         pwsat2_frame_sink.py 
         pwsat2_frame_source.py
         pwsat2_ptt.py
+        pwsat2_doppler.py
     DESTINATION ${GR_PYTHON_DIR}/pwsat2
 )
 
