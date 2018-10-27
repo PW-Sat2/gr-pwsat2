@@ -4,7 +4,7 @@
   <key>pwsat2_ptt</key>
   <category>[PW-Sat2]</category>
   <import>import pwsat2</import>
-  <make>pwsat2.pwsat2_ptt($device, $samp_rate, $delay)</make>
+  <make>pwsat2.pwsat2_ptt($device, $samp_rate, $delay, $predelay, $isPredelayUsed)</make>
 
   <param>
     <name>Device</name>
@@ -28,6 +28,21 @@
     <hide>part</hide>
   </param>
 
+  <param>
+    <name>Pre-delay</name>
+    <key>predelay</key>
+    <value>0.2</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Is pre-delay used</name>
+    <key>isPredelayUsed</key>
+    <value>False</value>
+    <type>bool</type>
+    <hide>part</hide>
+  </param>
 
   <sink>
     <name>in</name>
